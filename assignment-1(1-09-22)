@@ -1,0 +1,20 @@
+#include <stdio.h>
+int fact(int);
+
+int main()
+{
+   int x,y;
+   scanf("%d",&x);
+   y=fact(x);
+   printf("%d",y);
+    return 0;
+}
+int fact(int a)
+{
+    int i,fact=1;
+   for(i=1;i<=a;i++)
+   {
+       fact=fact*i;
+   }
+   return fact;
+}
