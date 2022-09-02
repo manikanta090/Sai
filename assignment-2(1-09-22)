@@ -1,0 +1,19 @@
+#include <stdio.h>
+int check(int);
+
+int main()
+{
+   int x,y;
+   scanf("%d",&x);
+    if(check(x))
+    printf("even");
+    else
+    printf("odd");
+
+    return 0;
+}
+int check(int a)
+{
+    return !(a & 1);
+
+}
